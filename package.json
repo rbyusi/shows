@@ -1,0 +1,24 @@
+{
+  "name": "codechallenge",
+  "version": "1.0.0",
+  "description": "Nine Dev Code Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=development nodemon app"
+  },
+  "author": "Ryan Yusi",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.6.3",
+    "ajv-formats": "^2.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.14"
+  }
+}

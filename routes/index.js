@@ -7,7 +7,7 @@ const showsSchema = require('../schema/shows');
 router.post('/', validateSchema(showsSchema),showsController.filterShows);
 
 router.get('/', (req, res)=>{
-    res.send('Hello World!')
+    res.json({text: 'Hello World!'})
 })
 
 module.exports = router;

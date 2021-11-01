@@ -3,10 +3,14 @@ class ShowsController {
 
         let shows = req.body.payload;
 
-        const filtered = shows.filter(show => show.drm && show.episodeCount > 0)
+        if(!shows){
+            res.json({text: "No valid payload was detected"});
+        }
+
+        const filtered= shows.filter(show => show.drm && show.episodeCount > 0)
             .map(show => ({ image: show.image.showImage, slug: show.slug, title: show.title }))
 
-        res.json(filtered);
+        res.json({response: filtered});
     }
 }
 module.exports = new ShowsController();

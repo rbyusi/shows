@@ -25,3 +25,8 @@ app.use('/', require('./routes/index'));
 app.listen(PORT, () => {
     console.log(`App running on ${process.env.NODE_ENV} and listening at port ${PORT}`);
 });
+
+if(process.env != 'production'){
+    module.exports = app.listen(5000)
+}
+

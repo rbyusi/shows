@@ -14,6 +14,10 @@ title
 
 - [Deployed in Heroku](https://code-challenge-for-nine.herokuapp.com/ "Live View")
 
+## Pre-requisites
+
+You should have node install in order to run the commands below. Check out [Nodejs](https://nodejs.org/en/).
+
 ## Commands
 
 
